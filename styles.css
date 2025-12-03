@@ -1,16 +1,103 @@
+/* GLOBAL COLORS */
+:root {
+    --gold: #B28A37; /* Deep rich gold */
+    --black: #000000;
+    --white: #ffffff;
+}
 
-body { background:#000; color:#fff; font-family:Arial; margin:0; }
-a { color:gold; }
-.top { text-align:center; padding:25px; border-bottom:2px solid gold; }
-h1 { color:gold; margin:0; font-size:36px; }
-.tagline { color:#e2c879; font-size:18px; margin-top:5px; }
-.hero { text-align:center; padding:30px 20px; border-bottom:1px solid gold; }
-.cta { margin-top:20px; }
-.btn { background:gold; color:black; padding:10px 18px; border-radius:6px; text-decoration:none; font-weight:bold; margin:5px; }
-.btn.ghost { background:transparent; border:2px solid gold; color:gold; }
-.services, .booking { padding:20px; margin:20px; border:1px solid gold; border-radius:10px; }
-.services ul { list-style:none; padding:0; }
-.services li { margin-bottom:12px; }
-input,select,textarea { width:100%; padding:10px; margin-bottom:12px; border-radius:6px; background:#111; color:#fff; border:1px solid #444; }
-button { background:gold; border:none; padding:12px; width:100%; font-weight:bold; border-radius:6px; cursor:pointer; }
-footer { text-align:center; padding:20px; border-top:1px solid gold; }
+/* BODY SETTINGS */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* HEADER BANNER BOX */
+.header-banner {
+    background-color: var(--black);
+    padding: 30px 20px;
+    border-radius: 20px;
+    width: 85%;
+    max-width: 600px;
+    margin: 30px auto 10px auto;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+}
+
+/* LOGO IMAGE */
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+/* BRAND TITLE */
+.brand-title {
+    font-family: "Times New Roman", serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--gold);
+    margin-top: 10px;
+}
+
+/* GOLD DIVIDER */
+.gold-divider {
+    width: 90%;
+    height: 3px;
+    background-color: var(--gold);
+    margin: 20px auto;
+    border-radius: 2px;
+}
+
+/* MAIN WHITE SECTION */
+.services-section {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+/* SECTION TITLE */
+.services-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* SERVICES GRID */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* SERVICE CARDS */
+.service-card {
+    background-color: var(--white);
+    border: 2px solid var(--gold);
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(178,138,55,0.2);
+}
+
+.service-card h3 {
+    margin-top: 0;
+    font-size: 22px;
+    color: var(--black);
+}
+
+.service-card p {
+    font-size: 15px;
+    color: #444;
+}
+
+.price {
+    margin-top: 15px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--gold);
+}
