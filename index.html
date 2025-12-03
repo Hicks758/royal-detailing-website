@@ -1,87 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Royal Detailing | Elegance Delivered</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Detailing</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="top">
-    <h1>Royal Detailing</h1>
-    <p class="tagline">Elegance Delivered</p>
-</header>
 
-<section class="hero">
-    <h2>Premium Mobile Auto Detailing</h2>
-    <p>Serving St. Louis and surrounding Illinois areas.<br>
-    For locations outside this region, <strong>please contact us for availability.</strong></p>
-
-    <div class="cta">
-        <a href="tel:+13147575097" class="btn">Call Now</a>
-        <a href="#booking" class="btn ghost">Book Now</a>
+    <!-- HEADER BANNER BOX -->
+    <div class="header-banner">
+        <img src="5D579F37-1CBD-46C3-8267-C41AB63E0759.png" class="logo" alt="Royal Detailing Logo">
+        <h1 class="brand-title">Royal Detailing</h1>
     </div>
-</section>
 
-<section class="services">
-    <h2>Our Services & Pricing</h2>
-    <ul>
-        <li><strong>Basic Wash & Vacuum</strong> — Cars $60 · SUVs $70 · Trucks $80</li>
-        <li><strong>Full Interior Detail</strong> — Cars $120 · SUVs $140 · Trucks $160</li>
-        <li><strong>Full Exterior Detail</strong> — Cars $100 · SUVs $120 · Trucks $130</li>
-        <li><strong>Full Detail Package</strong> — Cars $180 · SUVs $200 · Trucks $220</li>
-        <li><strong>Shampoo</strong> — Seats/Carpets $40–$60 · Full Shampoo $60–$80</li>
-        <li><strong>Pet Hair Removal</strong> — $25–$80 depending on vehicle</li>
-        <li><strong>Odor Removal</strong> — $40–$60</li>
-    </ul>
-</section>
+    <!-- GOLD DIVIDER -->
+    <div class="gold-divider"></div>
 
-<section id="booking" class="booking">
-    <h2>Book Your Appointment</h2>
-    <form action="https://formspree.io/f/mzzblbko" method="POST">
+    <!-- MAIN SERVICES SECTION -->
+    <section class="services-section">
+        <h2>Our Services & Prices</h2>
 
-        <label>Your Name:</label>
-        <input type="text" name="name" required>
+        <div class="services-container">
 
-        <label>Your Email:</label>
-        <input type="email" name="email" required>
+            <div class="service-card">
+                <h3>Exterior Wash</h3>
+                <p>Full exterior hand wash, wheels cleaned, tires dressed.</p>
+                <span class="price">$40+</span>
+            </div>
 
-        <label>Your Phone Number:</label>
-        <input type="text" name="phone" required>
+            <div class="service-card">
+                <h3>Interior Detail</h3>
+                <p>Vacuum, wipe-down, windows, mats, and full interior clean.</p>
+                <span class="price">$60+</span>
+            </div>
 
-        <label>Vehicle Size:</label>
-        <select name="size" required>
-            <option>Car</option>
-            <option>SUV / Crossover</option>
-            <option>Truck / Van / 3rd Row</option>
-        </select>
+            <div class="service-card">
+                <h3>Full Detail</h3>
+                <p>Complete inside & out detail with wax and deep clean.</p>
+                <span class="price">$120+</span>
+            </div>
 
-        <label>Type of Service:</label>
-        <select name="service" required>
-            <option>Basic Wash & Vacuum</option>
-            <option>Full Interior Detail</option>
-            <option>Full Exterior Detail</option>
-            <option>Full Detail Package</option>
-            <option>Shampoo</option>
-            <option>Pet Hair Removal</option>
-            <option>Odor Removal</option>
-        </select>
-
-        <label>Preferred Date:</label>
-        <input type="date" name="date" required>
-
-        <label>Notes (optional):</label>
-        <textarea name="notes"></textarea>
-
-        <button type="submit">Submit Booking</button>
-
-    </form>
-</section>
-
-<footer>
-    <p>Contact: <a href="tel:+13147575097">314-757-5097</a> | <a href="mailto:RoyalDetailing61@gmail.com">RoyalDetailing61@gmail.com</a></p>
-    <p>© 2025 Royal Detailing — Elegance Delivered</p>
-</footer>
+        </div>
+    </section>
 
 </body>
 </html>
