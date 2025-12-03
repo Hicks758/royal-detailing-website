@@ -1,46 +1,43 @@
-/* GLOBAL COLORS */
+/* COLORS */
 :root {
-    --gold: #B28A37; /* Deep rich gold */
+    --gold: #B28A37;
     --black: #000000;
-    --white: #ffffff;
+    --white: #FFFFFF;
 }
 
-/* BODY SETTINGS */
+/* BODY */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
     background-color: var(--white);
+    font-family: Arial, sans-serif;
     color: var(--black);
 }
 
-/* HEADER BANNER BOX */
+/* HEADER */
 .header-banner {
     background-color: var(--black);
-    padding: 30px 20px;
-    border-radius: 20px;
     width: 85%;
     max-width: 600px;
     margin: 30px auto 10px auto;
+    padding: 30px 20px;
+    border-radius: 20px;
     text-align: center;
     box-shadow: 0 0 12px rgba(0,0,0,0.4);
 }
 
-/* LOGO IMAGE */
 .logo {
     width: 120px;
-    height: auto;
 }
 
-/* BRAND TITLE */
 .brand-title {
-    font-family: "Times New Roman", serif;
-    font-size: 32px;
-    font-weight: bold;
     color: var(--gold);
+    font-size: 32px;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
     margin-top: 10px;
 }
 
-/* GOLD DIVIDER */
+/* DIVIDER */
 .gold-divider {
     width: 90%;
     height: 3px;
@@ -49,55 +46,91 @@ body {
     border-radius: 2px;
 }
 
-/* MAIN WHITE SECTION */
+/* SERVICES SECTION */
 .services-section {
     width: 90%;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
     text-align: center;
 }
 
-/* SECTION TITLE */
 .services-section h2 {
     font-size: 28px;
-    font-weight: bold;
     margin-bottom: 20px;
 }
 
-/* SERVICES GRID */
-.services-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+.service-list p {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
-/* SERVICE CARDS */
-.service-card {
+/* PRICING */
+.pricing-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pricing-card {
     background-color: var(--white);
     border: 2px solid var(--gold);
     border-radius: 12px;
+    width: 260px;
     padding: 20px;
-    width: 250px;
-    text-align: center;
+    text-align: left;
     box-shadow: 0 0 8px rgba(178,138,55,0.2);
 }
 
-.service-card h3 {
-    margin-top: 0;
-    font-size: 22px;
-    color: var(--black);
-}
-
-.service-card p {
-    font-size: 15px;
-    color: #444;
+.pricing-card h3 {
+    text-align: center;
+    margin: 0 0 10px;
 }
 
 .price {
-    margin-top: 15px;
-    display: block;
-    font-size: 20px;
-    font-weight: bold;
     color: var(--gold);
+    font-weight: bold;
+}
+
+/* SERVICE AREA */
+.service-area {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* BOOKING */
+.booking-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.booking-info {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.booking-info a {
+    color: var(--gold);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* BOOK NOW BUTTON */
+.book-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    border-radius: 999px;
+    background-color: var(--gold);
+    color: var(--black);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.book-button:hover {
+    filter: brightness(1.1);
 }
